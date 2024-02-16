@@ -1,0 +1,66 @@
+
+# Programming Assignment 1
+
+## Values
+
+``` r
+dur_hablo_stressed <- 0.415
+dur_hablo_unstressed <- 0.333
+dur_o_stressed <- 0.132
+dur_o_unstressed <- 0.077
+int_o_stressed <- 84.92
+int_o_unstressed <- 84.44
+f0_o_stressed <- 171.23
+f0_o_unstressed <- 195.86
+```
+
+## Operations
+
+``` r
+# Difference in ms between “hablo” and “habló”
+dur_diff_word <- dur_hablo_unstressed - dur_hablo_stressed
+
+dur_diff_word
+```
+
+    ## [1] -0.082
+
+``` r
+# Difference in ms between the stressed and unstressed [o]
+dur_diff_vowel <- dur_o_unstressed - dur_o_stressed
+
+dur_diff_vowel
+```
+
+    ## [1] -0.055
+
+``` r
+# Difference in intensity between the stressed and unstressed [o]
+int_diff_vowel <- int_o_stressed - int_o_unstressed
+
+int_diff_vowel
+```
+
+    ## [1] 0.48
+
+``` r
+# Difference in F0 between the stressed and unstressed [o]
+f0_diff_vowel <- f0_o_stressed - f0_o_unstressed
+
+f0_diff_vowel
+```
+
+    ## [1] -24.63
+
+## Observations
+
+The words *hablo* and *habló* have different duration. *Hablo* is
+0.082ms shorter than *habló*. As for the difference in duration in both
+unstressed and stressed \[o\], the latter is 0.055ms longer than its
+unstressed counterpart.
+
+There are also differences in the intensity and F0 at the midpoint of
+the unstressed and stressed \[o\]. The difference in intensity between
+these vowels is 0.48 dB, having the stressed \[o\] a higher intensity.
+As for the F0, there is a difference of -24.64 Hz between the stressed
+and the unstressed \[o\], having the former a lower pitch.
